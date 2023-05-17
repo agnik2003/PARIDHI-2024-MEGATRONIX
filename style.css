@@ -170,11 +170,11 @@ font-family: 'Poppins', sans-serif;
     width: 90%;
     max-width: 31.25em;
     transform: translate(-50%, -50%);
-    /* top: 200%; */
-    left: 50%; 
+     top: 200%; 
+   left: 50%; 
     padding: 3em 2em;
     border-radius: 0.5em;
-    box-shadow: 3px 5px 20px 5px rgb(0 0 0 /90%);
+    box-shadow: 3px 5px 20px 5px rgb(0 0 0 /90%); 
 } */
 
 
