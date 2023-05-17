@@ -164,7 +164,7 @@ font-family: 'Poppins', sans-serif;
         font-size: 23px;
     }
 }
-.container {
+/* .container {
     position: absolute;
     background-color: #e9a718;
     width: 90%;
@@ -175,11 +175,11 @@ font-family: 'Poppins', sans-serif;
     padding: 3em 2em;
     border-radius: 0.5em;
     box-shadow: 3px 5px 20px 5px rgb(0 0 0 /90%);
-}
+} */
 
 
 /* changes made by prabhat */
-/* .takeinput{
+.takeinput{
     position: absolute;
     background-color: #e9a718;
     width: 90%;
@@ -207,7 +207,7 @@ font-family: 'Poppins', sans-serif;
         padding-top: 2em;
     }
 } 
-*/
+
 
 .app-title {
     font-weight: 400;
