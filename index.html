@@ -7,10 +7,11 @@
         content="Gender prediction using name" />
     <title>Gen Predictor</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" type="image/png" href="favicon.svg" />
+    <link rel="shortcut icon" type="image/png" href="male.svg" />
     <!-- this icon shows in browser toolbar -->
-    <link rel="icon" type="image/png" href="favicon.svg" />
+    <link rel="icon" type="image/png" href="male.svg" />
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
 <body>
     <nav class="navbar">
@@ -47,7 +48,6 @@
                 <p>Gender prediction using name involves using the characteristics of a person's name to determine their gender. While it can be accurate in many cases, it is not always reliable due to the increasing popularity of gender-neutral names and the complexity of gender identity.
                     Names are often associated with gender, and many cultures have naming conventions that reflect this association. For example, names ending in "a" are often associated with females in some cultures, while names ending in "o" are often associated with males in others.
             </p>
-      
         </div>
     </div>
 
@@ -59,17 +59,58 @@
                         type="text"
                         value="arnab"
                         id="name"
-                        placeholder="Enter a name.."
-                    /> <br>
+                        placeholder="Enter a name.."/> 
+                    <br>
                 <button id="submit">Predict</button>
                 </div>
-                    <div id="result">
-                        <br>
+                <div id="result">
                     <div id="wrapper"></div>
                     <div id="error"></div>
                 </div>
-        </div>
+            </div>
     </section>
+
+    <!-- changes made by prabhat -->
+    <!-- <section class="pred">
+        <div class="container">
+            <div class="takeinput">
+                <h1 class="app-title">Predict Gender By Name</h1>
+                <div class="input-wrapper">
+                    <input type="text" value="arnab" id="name" placeholder="Enter a name.." /> <br>
+                    <button id="submit">Predict</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="showresult">
+            <div id="result">
+                <div id="wrapper"></div>
+                <div id="error"></div>
+            </div>
+        </div>
+    </section> -->
+
+
+    <!-- changes made by poorva -->
+    <script src="/index.js" type="module"></script>
+
+    <footer>
+        <div class="credit">
+            <h1>Made with <span style="color: tomato">❤</span> by T-Rex</h1>
+        </div>
+        <div class="contact-us">
+            <p>Contact us on :</p>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-facebook"></i>    
+            <i class="bi bi-twitter"></i>
+            <i class="bi bi-github"></i>
+            <i class="bi bi-linkedin"></i>
+        </div>
+        <!-- #ffdf66 -->
+        <!-- #f59535 -->
+        <hr color="#ffdf66" >
+        <p class="copyright">&#169; 2023-2024 T-Rex. All Rights Reserved.</p>
+    </footer>
 
     <script src="script.js"></script>
 

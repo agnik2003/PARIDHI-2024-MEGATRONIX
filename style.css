@@ -82,15 +82,17 @@ font-family: 'Poppins', sans-serif;
     box-shadow: 0 0 10px 0 rgb(0, 204, 255) inset, 0 0 10px 4px rgb(0, 204, 255);
 }
 .about{
-  padding: 40px 0;
-  background-color: #3D8DAE;
+    padding: 40px 0;
+    background-color: #3D8DAE;
 }
 .pred{
-  padding: 80vh 0;
-  /*background-color: #ACCFCB;*/
-  background-image: url(BACKGROUND.jpeg);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
+    /* padding: 55vh 0; */
+    padding: 80vh 0;
+    /* background-color: #ACCFCB; */
+
+    background-image: url(BACKGROUND.jpeg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 .about .title{
     font-size: 35px;
@@ -167,13 +169,46 @@ font-family: 'Poppins', sans-serif;
     background-color: #e9a718;
     width: 90%;
     max-width: 31.25em;
-    height: 30%;
+    transform: translate(-50%, -50%);
+    /* top: 200%; */
+    left: 50%; 
+    padding: 3em 2em;
+    border-radius: 0.5em;
+    box-shadow: 3px 5px 20px 5px rgb(0 0 0 /90%);
+}
+
+
+/* changes made by prabhat */
+/* .takeinput{
+    position: absolute;
+    background-color: #e9a718;
+    width: 90%;
+    max-width: 31.25em;
     transform: translate(-50%, -50%);
     top: 200%;
     left: 50%;
-    padding: 3em 2em;
-    border-radius: 0.5em;
+    padding: 1em 2em;
+    border-radius: 1em;
+    box-shadow: 5px 5px 10px 1px rgb(0 0 0 /90%);
 }
+
+.showresult{
+    position: absolute;
+    width: 90%;
+    max-width: 31.25em;
+    transform: translate(-50%,-50%);
+    top: 240%;
+    left: 50%;
+    border-radius: 1em;
+}
+
+@media(max-width:432px){
+    .showresult{
+        padding-top: 2em;
+    }
+} 
+*/
+
 .app-title {
     font-weight: 400;
     text-transform: uppercase;
@@ -182,13 +217,18 @@ font-family: 'Poppins', sans-serif;
     position: relative;
     margin: auto;
     color: #020332;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.1em;
 }
 .input-wrapper {
     display: grid;
-    grid-template-columns: 9fr 3fr;
+    grid-template-columns: minmax(0, 70fr) minmax(0, 0fr);
     gap: 1em;
-    margin: 2.5em 0;
+    margin: 2em 0;
+}
+@media (max-width:150px){
+    .input-wrapper{
+        grid-template-columns: minmax(0, 3fr);
+    }
 }
 #name,
 #submit {
@@ -206,15 +246,18 @@ font-family: 'Poppins', sans-serif;
     border-radius: 0.5em;
 }
 .female {
-    background-color: #f59535;
+    /* background-color: #f59535; */
+    /* background-color: #f00fdd; */
+    background-color: hwb(305 0% 27%);
 }
 .male {
     background-color: #5a72e9;
 }
 .null{
-  background-color: #da123a;
+    background-color: #da123a;
 }
-#info {
+
+#info { 
     padding: 2em 1em;
     text-align: center;
     border-radius: 0.9em;
@@ -254,12 +297,28 @@ button {
     cursor: pointer;
 }
 
+footer{
+    letter-spacing: 2px;
+    padding: 0.5em 0;
+    color: white;
+    background: #1b1b1b;
+    text-align: center;
+}
+.contact-us{
+    padding: .5em 0;
+}
+.contact-us i {
+    font-size: 1.5em;
+    padding: 0em .18em;
+}
+.copyright{
+    padding: .5em 0;
+}
 .title-word {
     animation: color-animation 3s linear infinite;
 }
 
 .title-word-1 {
-
     --color-1: #DF8453;
     --color-2: #3D8DAE;
     --color-3: #E4A9A8;
