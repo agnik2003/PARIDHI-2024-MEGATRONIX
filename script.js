@@ -56,7 +56,7 @@ shareBtn.addEventListener('click', event => {
         // Browser supports native share api
         navigator.share({
         text: 'Visit this website 😊: ',
-        url: 'https://arnab-4.github.io/GenPred/'
+        url: 'https://https-github-com-arnab-4.github.io/GenPred/'
     }).then(() => {
         console.log('Thanks for sharing!');
     })
