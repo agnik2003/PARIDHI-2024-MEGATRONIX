@@ -22,12 +22,17 @@ let predictGender = () => {
                 div.classList.add("female");
                 document
                 .getElementById("gender-icon")
-                .setAttribute("src", "female.svg");
-            } else {
+                .setAttribute("src", "female-body.svg");
+            } else if (data.gender == "male"){
                 div.classList.add("male");
                 document
                 .getElementById("gender-icon")
-                .setAttribute("src", "male.svg");
+                .setAttribute("src", "male-body.svg");
+            } else {
+                div.classList.add("null");
+                document
+                .getElementById("gender-icon")
+                .setAttribute("src", "null.svg");
             }
         });
         document.getElementById("name").value = "";
