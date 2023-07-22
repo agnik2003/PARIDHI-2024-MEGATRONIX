@@ -22,12 +22,12 @@ let predictGender = () => {
                 div.classList.add("female");
                 document
                 .getElementById("gender-icon")
-                .setAttribute("src", "female-body.svg");
+                .setAttribute("src", "female.png");
             } else if (data.gender == "male"){
                 div.classList.add("male");
                 document
                 .getElementById("gender-icon")
-                .setAttribute("src", "male-body.svg");
+                .setAttribute("src", "male.png");
             } else {
                 div.classList.add("null");
                 document
